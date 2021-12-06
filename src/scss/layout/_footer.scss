@@ -1,1 +1,80 @@
+.footer{
+    background-color: $color-blue;
+    color:white;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:40px;
+    &__arrows{
+        border:solid 1px white;
+        background-color: $color-blue;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 45px;
+        border-radius: 40px;
+        padding:10px;
+        transform:translateY(-20px);
+        &--img{
+            width: 25px;
+        }
+    }
+    &__feadback{
+        padding:15px;
+        text-align: justify;
+        font-size: 1.1rem;
+        @media all and (min-width:768px){
+            font-size: 1.5rem;
+        }
+    }
+    &__made{
+        text-align: center;
+        margin:10px;
+        @media all and (min-width:768px){
+            font-size: 1.2rem;;
+           }
+        &--heart{
+            color:red;
+            font-size: 1.2rem;
+            margin-left:5px;
+            position: absolute;
+            animation: latido 1s  infinite linear;
+        }
+    }
+}
+.nav-contact{
+    display:flex;
+    justify-content: center;
+    margin:10px;
+    &__icons{
+        margin:5px;
+        padding:10px;
+        width: 40px;
+        @media all and (min-width:768px){
+         width: 50px;
+        }
+        &--link{
+            font-size: 20px;
+            padding:15px;
+            @media all and (min-width:768px){
+                font-size: 35px;
+               }
+        }
+    }
+}
 
+@keyframes latido {
+    0%
+    {
+      transform: scale( 1 )    
+    }
+    20%
+    {
+      transform: scale( 1.25 )
+    }
+     40%
+    {
+      transform: scale( 1.5 )
+    }
+  }

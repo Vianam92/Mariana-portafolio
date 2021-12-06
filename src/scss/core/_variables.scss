@@ -3,3 +3,19 @@ $font-roboto:'Roboto Slab', serif;
 $font-rubik:'Rubik', sans-serif;
 
 $color-blue:#054752;
+
+@mixin icon {
+    width:40px;
+        font-size: 40px;
+        color:#054752;
+        padding:15px;
+        
+}
+@mixin title-h2 {
+    font-size: 2rem;
+        margin:10px;
+        text-decoration:underline $color-blue; 
+        width:100%;
+        text-align: center;
+}
+

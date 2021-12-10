@@ -26,8 +26,10 @@
             margin:20px;
             box-shadow: 3px 5px 20px rgba(0,0,0,.5);
         }
-        &--anonimus{
+        &--image{
             width: 100%;
+            height:314.72px;
+            object-fit: contain;
         }
         &--tecnolog{
             margin: 10px;

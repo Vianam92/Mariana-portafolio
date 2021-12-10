@@ -4,7 +4,6 @@
     justify-content: space-between;
     background-color: #73bfca;
     align-items: center;
-    flex-wrap: wrap;
     z-index:2;
     width:100%;
     top:0;
@@ -15,14 +14,14 @@
    }
    &__nav{
       display:flex;
+      flex-wrap: wrap;
       background-color: #73bfca;
       &--list{
           padding:5px;
-          text-decoration:underline;
           transition: text-decoration ease 2s;
-          
           &:hover{
-              text-decoration: wavy;
+              text-decoration: underline;
+
           }
       }
    }

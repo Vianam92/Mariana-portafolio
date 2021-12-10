@@ -28,9 +28,17 @@
         }
         &--text{
             margin:5px;
+            width: 100%;
+            text-align: center;
+            border-bottom: solid 1px $color-blue;
+            border-radius: 20px;
             @media all and (min-width:768px){
                 font-size: 1.6rem;
             }
         }
     }
+}
+
+.collapsed .efect-collapsed{
+    display:none;
 }

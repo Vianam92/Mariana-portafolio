@@ -2,13 +2,12 @@
     position:fixed;
     display:flex;
     justify-content: space-between;
-    background-color: #73bfca;
     align-items: center;
     z-index:2;
     width:100%;
     top:0;
    &__img{
-       width:45px;
+       width:48px;
        background-color: $color-blue;
        padding:10px;
    }
@@ -16,6 +15,10 @@
       display:flex;
       flex-wrap: wrap;
       background-color: #73bfca;
+      justify-content: end;
+      height: 45px;
+      align-items: center;
+      
       &--list{
           padding:5px;
           transition: text-decoration ease 2s;
@@ -38,4 +41,7 @@
 
 .hidden{
     display:none;
+}
+nav{
+    width: 100%;
 }

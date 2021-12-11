@@ -1,68 +1,213 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
-  </head>
 
-  <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400&family=Roboto+Slab:wght@500&family=Rubik:wght@300&display=swap"
+    rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <title>Portafolio Personal</title>
+</head>
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+<body>
+  <header class="header">
+      <img src="./assets/images/ico-menu.svg" alt="icon" class="header__img js-click">
+      <nav class="js-menu hidden">
+          <ul class="header__nav">
+              <li class=header__nav--list><a href="#aboutMe" class="link">Sobre mi</a></li>
+              <li class=header__nav--list><a href="#herramientas" class="link">Herramientas</a></li>
+              <li class=header__nav--list><a href="#projects" class="link">Proyectos</a></li>
+              <li class=header__nav--list><a href="#footer" class="link">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+  <main>
+      <section class="hero">
+          <img class="hero__img" src="./assets/images/mi_octocal.png" />
+          <div>
+              <h1 class="hero__title">Hola, mi nombre es Mariana</h1>
+              <h3 class="hero__text">y soy Front-End Developer</h3>
+          </div>
+      </section>
+      <article class="aboutMe" id="aboutMe">
+          <h2 class="aboutMe__h2">Sobre mi</h2>
+          <figure class="aboutMe__images">
+              <img src="./assets/images/photo.jpg" alt="photo" class="aboutMe__images--photo">
+          </figure>
+          <p class="aboutMe__description">Antes contadora ahora programadora Front-End Jr.
+              Nacida en Cuba pero de descendientes gallegos, 4 generaciones despues regreso a la tierra de mis bisabuelos.Como
+              buena cubana me encanta la música y el baile, disfruto la buena comida, los paseos por la naturaleza y el
+              deporte.
+              Y ya que estoy en un nuevo pais no hay nada mejor que reinventarse, despues de pasar varios cursos y estudiar
+              por
+              mi cuenta decidi dar el paso y aplicar a Adalab.
+              Lo que más me gusta de la programación es que no hay límites para seguir aprendiendo y creciendo.
+              La comunidad tech es un sector colaborativo y de trabajo en equipo y estoy orgullosa de pertenecer a el.
+          </p>
+      </article>
+      <article class="article" id="herramientas">
+          <h2 class="article__herramientas">Herramientas</h2>
+          <section class="article__section collapsed">
+              <h4 class="article__section--text js-collapsed-front"><code>FrontEnd</code><i class="fa fa-arrow-down"></i></h4>
+              <ul class="efect-collapsed">
+                  <li>
+                      html5
+                  </li>
+                  <li>
+                      Css3
+                  </li>
+                  <li>
+                      Sass
+                  </li>
+                  <li>
+                      Javascript
+                  </li>
+                  <li>
+                      React
+                  </li>
+              </ul>
+          </section>
+          <section class="article__section collapsed">
+              <h4 class="article__section--text js-collapsed-back"><code>BackEnd</code>
+                  <i class="fa fa-arrow-down"></i>
+              </h4>
+              <ul class="efect-collapsed">
+                  <li>
+                      Node
+                  </li>
+                  <li>
+                      Datos
+                  </li>
+              </ul>
+          </section>
+          <section class="article__section collapsed">
+              <h4 class="article__section--text js-collapsed-other"><code>Other</code>
+                  <i class="fa fa-arrow-down"></i>
+              </h4>
+              <ul class="efect-collapsed">
+                  <li>
+                      npm
+                  </li>
+                  <li>
+                      git
+                  </li>
+                  <li>
+                      gitHub
+                  </li>
+                  <li>
+                      terminal
+                  </li>
+                  <li>
+                      Ubuntu
+                  </li>
+                  <li>slack</li>
+                  <li>
+                      scrum
+                  </li>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+              </ul>
+          </section>
+          <section class="article__section collapsed">
+              <h4 class="article__section--text js-collapsed-skill"><code>Skill Personales</code>
+                  <i class="fa fa-arrow-down"></i>
+              </h4>
+              <ul class="efect-collapsed">
+                  <li>Compromiso</li>
+                  <li>Autodidacta</li>
+                  <li>Proactiva</li>
+                  <li>Flexible</li>
+                  <li>Curiosa</li>
+              </ul>
+          </section>
+      </article>
+      <section class="project" id="projects">
+          <h2 class="project__title">Mis Proyectos</h2>
+          <section class="project__section">
+              <img src="./assets/images/Anonimus-proxy.png" Alt="anonimus" class="project__section--image">
+              <div class="link-projects">
+                  <a href="#" class="link-projects__icon" title="repositorio"><i class="fab fa-github-alt icon"></i></a>
+                  <a href="#" class="link-projects__demo" title="title"><i class="fa fa-link"></i></a>
+              </div>
 
-          </li>
-        </ul>
-      </main>
+              <div class="project__section--tecnolog">
+                  <p>htm5 / css3 / sass / bem / responsive</p>
+              </div>
+          </section>
+          <section class="project__section">
+              <img src="./assets/images/Spotify.png" Alt="spotify" class="project__section--image">
+              <div class="link-projects">
+                  <a href="#" class="link-projects__icon" title="Repositorio"><i class="fab fa-github-alt"></i></a>
+                  <a href="#" class="link-projects__demo" title="Demo"><i class="fa fa-link"></i></a>
+              </div>
+              <div class="project__section--tecnolog">
+                  <p>htm5 / css3 / sass / bem / responsive</p>
+              </div>
+          </section>
+          <section class="project__section">
+              <h4>Proyecto de Equipo</h4>
+              <img src="./assets/images/collage_4Fantasticas.jpg" Alt="spotify" class="project__section--image">
+              <div class="link-projects">
+                  <a href="#" class="link-projects__icon" title="Repositorio"><i class="fab fa-github-alt"></i></a>
+                  <a href="#" class="link-projects__demo" title="Demo"><i class="fa fa-link"></i></a>
+              </div>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+              <div class="project__section--tecnolog">
+                  <p>htm5 / css3 / sass / bem / responsive</p>
+              </div>
+          </section>
+          <section class="project__section">
+              <img src="./assets/images/Spotify.png" Alt="spotify" class="project__section--image">
+              <div class="link-projects">
+                  <a href="#" class="link-projects__icon" title="Repositorio"><i class="fab fa-github-alt"></i></a>
+                  <a href="#" class="link-projects__demo" title="Demo"><i class="fa fa-link"></i></a>
+              </div>
 
-        </small>
-      </footer>
+              <div class="project__section--tecnolog">
+                  Tecnologias usadas
+              </div>
+          </section>
+      </section>
+  </main>
+  <footer class="footer" id="footer">
+      <a href="#" class="footer__arrows">
+          <!--<img src="./assets/images/ico-arrow.svg" alt="arrow" class="footer__arrows--img">-->
+          <i class="fa fa-arrow-up footer__arrows--img"></i>
+      </a>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
-  </body>
+      <h5 class="footer__feadback">Si quereis contactar conmigo ya sea para darme feadback sobre mis proyectos o si creeis
+          que aportare valor a su
+          equipo, que asi será, podeis contactar conmigo a traves de:</h5>
+      <nav>
+          <ul class="nav-contact">
+              <li class="nav-contact__icons">
+                  <a href="mailto:vianarodriguezm@gmail.com" class="nav-contact__icons--link">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+              </li>
+              <li class="nav-contact__icons"><a href="https://github.com/Vianam92" class="nav-contact__icons--link">
+                      <i class="fab fa-github-alt"></i>
+                  </a></li>
+              <li class="nav-contact__icons"><a href="https://www.linkedin.com/in/mariana-viana-rodriguez-19871a195/"
+                      class="nav-contact__icons--link">
+                      <i class="fab fa-linkedin-in"></i>
+                  </a></li>
+              <li class="nav-contact__icons"><a href="https://twiter.es/vianam92" class="nav-contact__icons--link">
+                      <i class="fab fa-twitter"></i>
+                  </a></li>
+          </ul>
+      </nav>
+      <p class="footer__made">
+          <code>Made by Mariana </code><span class="footer__made--heart">❤</span>
+      </p>
+
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
 </html>

@@ -11,7 +11,6 @@
     scroll-margin-top:50px;
     &__herramientas{
         @include title-h2;
-       
     }
     &__section{
         display:flex;
@@ -20,9 +19,6 @@
         align-items: center;
         font-size: 1.2rem;
         margin:5px;
-        border:solid 2px rgba(243, 237, 237, 0);
-        box-shadow: 1px 2px 15px rgba(0,0,0,.5);
-        background-color: white;
         @media all and (min-width:768px){
             font-size: 1.5rem;
         }
@@ -32,13 +28,26 @@
             text-align: center;
             border-bottom: solid 1px $color-blue;
             border-radius: 20px;
+            border:solid 2px rgba(243, 237, 237, 0);
+            background-color: white;
+        box-shadow: 1px 2px 15px rgba(0,0,0,.5);
             @media all and (min-width:768px){
                 font-size: 1.6rem;
             }
         }
     }
 }
+.efect-collapsed{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    flex-grow: 1;
+    border:solid 2px rgba(243, 237, 237, 0);
+        box-shadow: 1px 2px 15px rgba(0,0,0,.5);
+}
+
 
 .collapsed .efect-collapsed{
     display:none;
+
 }

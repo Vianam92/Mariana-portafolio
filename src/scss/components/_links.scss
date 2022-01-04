@@ -1,0 +1,16 @@
+.section-link {
+    border-top: solid 3px black;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_about {
+        @include bottons;
+    }
+
+    &_proyectos {
+        @include bottons;
+    }
+}

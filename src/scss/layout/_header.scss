@@ -6,10 +6,10 @@
     z-index:2;
     width:100%;
     top:0;
-    border:solid 2px $color-blue;
     box-shadow: 3px 5px 20px rgba(0,0,0,.5);
    &__img{
-       width:48px;
+       width:49px;
+       height:49px;
        background-color: $color-blue;
        padding:10px;
    }
@@ -18,7 +18,7 @@
       flex-wrap: wrap;
       background-color: #73bfca;
       justify-content: end;
-      height: 45px;
+      height: 49px;
       align-items: center;
       
       &--list{
@@ -33,11 +33,11 @@
 }
 .link{
     color:white;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding:10px;
     color:#1b3c41;
     @media all and(min-width:768px){
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 

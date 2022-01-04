@@ -1,21 +1,88 @@
-$font-family:'Playfair Display', serif;
-$font-roboto:'Roboto Slab', serif;
-$font-rubik:'Rubik', sans-serif;
+$font-family:'Playfair Display',
+serif;
+$font-roboto:'Roboto Slab',
+serif;
+$font-rubik:'Rubik',
+sans-serif;
 
 $color-blue:#054752;
 
 @mixin icon {
-    width:40px;
-        font-size: 40px;
-        color:#054752;
-        padding:15px;
-        
-}
-@mixin title-h2 {
-    font-size: 2rem;
-        margin:10px;
-        text-decoration:underline $color-blue; 
-        width:100%;
-        text-align: center;
+    width: 40px;
+    font-size: 20px;
+    color: #054752;
+    margin:10px;
+    padding:5px;
+
 }
 
+@mixin title-h2 {
+    font-size: 2rem;
+    margin: 10px;
+    text-decoration: underline $color-blue;
+    width: 100%;
+    text-align: center;
+}
+
+@mixin bottons() {
+    width: 250px;
+    height: 50px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    color: $color-blue;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    width: 250px;
+    height: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(79, 189, 216);
+    background: linear-gradient(0deg, rgb(236, 210, 208) 0%, rgb(91, 240, 220) 100%);
+
+    &:hover {
+        color: #0000007a;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #0994f0;
+        box-shadow:
+            -1px -1px 5px 0px #fff,
+            7px 7px 20px 0px #0003,
+            4px 4px 5px 0px #0002;
+        transition: 400ms ease all;
+    }
+
+    &:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    &:hover:before,
+    &:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+}

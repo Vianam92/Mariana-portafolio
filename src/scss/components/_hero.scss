@@ -5,41 +5,84 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @media all and(min-width:768px){
-        flex-direction: row;
-        justify-content: space-around;
-    }
+
     &__img {
-        width: 250px;
-        height: 250px;
-        margin: 5px;
-        @media all and(min-width:1200px){
-            width:350px;
-            height:350px;
+        width: 150px;
+        height: 150px;
+        border: 5px white solid;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+
+        @media all and(min-width:768px) {
+            width: 350px;
+            height: 350px;
         }
     }
-    &__Iam{
-        width:100%;
+
+    &__Iam {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+
         &--title {
-        font-size: 1.5rem;
-        margin: 10px;
-        text-align: justify;
-        color: $color-blue;
-        @media all and (min-width:1200px) {
-            font-size: 2.5rem;
+            font-family: monospace;
+            font-size: 1.3rem;
+            padding: 10px 0 ;
+            text-align: center;
+            width: 100%;
+            color: $color-blue;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: type 4s steps(60, end);
+
+            @media all and (min-width: 768px) {
+                font-size: 2.5rem;
+            }
         }
-    }&--text {
-        font-size: 1rem;
-        margin: 10px;
-        color: $color-blue;
-        text-align: justify;
-        @media all and (min-width:1200px) {
-            font-size: 2.5rem;
+
+        &--text {
+            font-size: 1rem;
+            width: 100%;
+            font-family: monospace;
+            color: $color-blue;
+            text-align: center;
+            padding: 10px 0 ;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: type 4s steps(60, end);
+
+            @media all and (min-width: 768px) {
+                font-size: 2.2rem;
+            }
         }
-    }
     }
 }
 
+//image float
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+    }
+
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+    }
+}
+
+//animation text
+@keyframes type {
+    from {
+        width: 0;
+    }
+}

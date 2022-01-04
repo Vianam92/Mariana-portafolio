@@ -21,11 +21,11 @@
         @include title-h2;
 
         @media all and (min-width:768px) {
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         @media all and (min-width:1200px) {
-            font-size: 3rem;
+            font-size: 2.5rem;
             width: 60%;
             text-align: end;
         }
@@ -57,7 +57,7 @@
     }
 
     &__description {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: justify;
         margin: 0 5px;
 

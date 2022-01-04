@@ -7,12 +7,12 @@
     width:100%;
     top:0;
     box-shadow: 3px 5px 20px rgba(0,0,0,.5);
-   &__img{
+   /*&__img{
        width:49px;
        height:49px;
        background-color: $color-blue;
        padding:10px;
-   }
+   }*/
    &__nav{
       display:flex;
       flex-wrap: wrap;
@@ -33,11 +33,11 @@
 }
 .link{
     color:white;
-    font-size: 1.1rem;
+    font-size: 0.7rem;
     padding:10px;
     color:#1b3c41;
     @media all and(min-width:768px){
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 }
 
